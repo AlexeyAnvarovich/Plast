@@ -1,0 +1,263 @@
+/*Обнуление стилей всей страницы*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Чтобы фон был на всю страницу*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Чтобы main занимал оставшееся пространство */
+main {
+    flex-grow: 1;
+}
+/* Чтобы footer не уменьшался */
+footer {
+    flex-shrink: 0;
+}
+
+
+/*Общие стили шапки*/
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+/*Стили логотипа*/
+.header_logo{
+    width: 130px;
+    height: 100px;
+}
+/*Стили навигации*/
+.header_navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+}
+/*Стили кнопок в навигации*/
+.header_navigation_button{
+    color: dodgerblue;
+    font-family:"Arial Black", sans-serif,Arial;
+    background-color: white;
+    border: none;
+    margin: 10px;
+    font-size: large;
+}
+/*Стили информации в шапке*/
+.header_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: dimgray;
+    font-family: Arial, sans-serif, Calibri;
+
+}
+
+
+/*Общие стили тела сайта*/
+.main{
+    display: flex;
+    flex-direction: column;
+}
+/*Стили шапки в теле сайта*/
+.main_heir{
+    display: flex;
+    justify-content: center;
+    background-color: dodgerblue;
+    color: white;
+    font-family:"Arial Black", sans-serif,Arial;
+    font-size: x-large;
+    padding: 10px;
+}
+
+
+
+/*Стили основной информации на главной странице*/
+
+.main_index_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-image: url("photo/t-6.png");
+    background-size: cover;
+    min-height: 50vh;
+
+
+
+}
+.main_index_body_AAA{
+    color: white;
+    font-family: "Arial Black", sans-serif, Calibri;
+    font-size: 80px;
+}
+.main_index_body_aaa{
+    color: white;
+    font-family: "Arial Black", sans-serif, Calibri;
+    font-size: 58px;
+}
+
+
+
+
+
+
+/*Стили основной информации на странице "Продукция"*/
+.main_products_body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 40px;
+}
+.main_products_body_containers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    line-height: 1.5;
+}
+.products_photo{
+    border: dodgerblue solid 5px;
+}
+.main_products_body_AAA{
+    color: dimgray;
+    font-family: Arial, sans-serif, Calibri;
+    font-weight: bold;
+    text-align: center;
+}
+.main_products_body_aaa{
+    color: dimgray;
+    font-family: Arial, sans-serif, Calibri;
+    text-align: justify;
+}
+
+
+
+/*Стили основной информации на странице "Услуги"*/
+.main_services_body{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.main_services_body_info{
+    width: 70%;
+    text-align: justify;
+    line-height: 1.5;
+}
+.main_services_body_AAA{
+    color: dimgray;
+    font-family: Arial, sans-serif, Calibri;
+    font-weight: bold;
+}
+.main_services_body_aaa{
+    color: dimgray;
+    font-family: Arial, sans-serif, Calibri;
+}
+.services_photo{
+    width: 480px;
+    height: 360px;
+    border: dodgerblue solid 5px;
+}
+
+
+
+
+
+
+/*Стили основной информации на странице "О нас"*/
+.main_about_us_body{
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+}
+.main_about_us_body_info{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: justify;
+    line-height: 1.5;
+}
+.main_about_us_body_photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 160px;
+    width: 50%;
+}
+.about_us_photo{
+    width: 480px;
+    height: 270px;
+    border: dodgerblue solid 5px;
+}
+.main_about_us_body_AAA{
+    color: dimgray;
+    font-family: Arial, sans-serif, Calibri;
+    font-weight: bold;
+}
+.main_about_us_body_aaa{
+    color: dimgray;
+    font-family: Arial, sans-serif, Calibri;
+}
+
+
+
+
+
+/*Стили основной информации на странице "Контакты"*/
+.main_contacts_body{
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+
+}
+/*Стили контактной информации на странице контакты*/
+.main_contacts_body_info{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.main_contacts_body_info_AAA{
+    color: dimgray;
+    font-family: Arial, sans-serif, Calibri;
+    font-weight: bold;
+}
+.main_contacts_body_info_aaa{
+    color: dimgray;
+    font-family: Arial, sans-serif, Calibri;
+}
+/*Стили карты*/
+.main_contacts_body_cards{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+
+
+
+/*Стили подвала*/
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: dodgerblue;
+    color: white;
+    font-family: Arial, sans-serif, Calibri;
+    padding: 15px;
+}
+
+
